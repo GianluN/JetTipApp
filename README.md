@@ -15,10 +15,10 @@ L'applicazione permette di selezionare il numero di persone, inserire l'importo 
 Questo progetto è sviluppato interamente in Kotlin, utilizzando il moderno toolkit UI di Jetpack Compose, che facilita la costruzione di interfacce utente native.
 
 ## Contribuire
-Sei interessato a migliorare Trivia Game? Le tue contribuzioni sono benvenute! Ecco come puoi farlo:
+Sei interessato a migliorare JetTipApp? Le tue contribuzioni sono benvenute! Ecco come puoi farlo:
 
-Forka il progetto.
-Crea il tuo Branch (git checkout -b feature/AmazingFeature).
-Effettua le tue modifiche e commitale (git commit -m 'Add some AmazingFeature').
-Pusha il Branch (git push origin feature/AmazingFeature).
-Apri una Pull Request.
+- Forka il progetto.
+- Crea il tuo Branch (git checkout -b feature/AmazingFeature).
+- Effettua le tue modifiche e commitale (git commit -m 'Add some AmazingFeature').
+- Pusha il Branch (git push origin feature/AmazingFeature).
+- Apri una Pull Request.
