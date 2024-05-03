@@ -1,6 +1,6 @@
 # JetTipApp
 
-`JetTipApp di Spese` è un'applicazione Android sviluppata utilizzando Jetpack Compose, che aiuta a dividere le spese tra un gruppo di persone.
+`JetTipApp` è un'applicazione Android sviluppata utilizzando Jetpack Compose, che aiuta a dividere le spese tra un gruppo di persone.
 L'applicazione permette di selezionare il numero di persone, inserire l'importo totale e calcolare quanto ogni persona dovrebbe pagare, inclusa la possibilità di aggiungere una mancia.
 
 ## Funzionalità
@@ -13,3 +13,12 @@ L'applicazione permette di selezionare il numero di persone, inserire l'importo 
 ## Tecnologie Utilizzate
 
 Questo progetto è sviluppato interamente in Kotlin, utilizzando il moderno toolkit UI di Jetpack Compose, che facilita la costruzione di interfacce utente native.
+
+## Contribuire
+Sei interessato a migliorare Trivia Game? Le tue contribuzioni sono benvenute! Ecco come puoi farlo:
+
+Forka il progetto.
+Crea il tuo Branch (git checkout -b feature/AmazingFeature).
+Effettua le tue modifiche e commitale (git commit -m 'Add some AmazingFeature').
+Pusha il Branch (git push origin feature/AmazingFeature).
+Apri una Pull Request.
