@@ -32,7 +32,7 @@ fun RoundIconButton(
     Card(modifier = modifier
         .padding(all = 4.dp)
         .clickable { onClick.invoke() }
-        .then(IconbuttonSizeModifier), // quando clicchiamo cambiamo il suo aspetto per simulare il click
+        .then(IconbuttonSizeModifier),
         shape = CircleShape,
         colors = CardDefaults.cardColors(
             containerColor = backgroundColor
