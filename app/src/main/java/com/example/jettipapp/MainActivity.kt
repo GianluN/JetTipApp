@@ -78,14 +78,13 @@ fun TopHeader(totalPerPerson: Double = 134.0) {
             .height(150.dp)
             .clip(shape = CircleShape.copy(all = CornerSize(12.dp))),
         color = Color(0xFFE9D7F7)
-        //.clip(shape = RoundedCornerShape(corner = CornerSize(12.dp))) // clip dentro una shape
     ) {
         Column(
             modifier = Modifier.padding(12.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            val total = "%.2f".format(totalPerPerson) // format double
+            val total = "%.2f".format(totalPerPerson)
             Text(
                 text = "Total Per Person",
                 style = MaterialTheme.typography.headlineSmall
@@ -132,7 +131,6 @@ fun BillForm(
         mutableStateOf("")
     }
     val validState = remember(totalBillState.value) {
-        // verifichiamo che il valore sia inserito
         totalBillState.value.trim().isNotEmpty()
     }
     val keyboardController = LocalSoftwareKeyboardController.current
@@ -164,7 +162,6 @@ fun BillForm(
                 isSingleLine = true,
                 onAction = KeyboardActions {
                     if (!validState) return@KeyboardActions
-                    //ToDo - onValueChanged se inseriscono un valore corretto
                     onValChange(totalBillState.value.trim())
                     keyboardController?.hide()
                 }
@@ -203,7 +200,6 @@ fun BillForm(
                     })
                 }
                 }
-                //Tip Row
                 Row(modifier = Modifier.padding(horizontal = 3.dp, vertical = 12.dp)) {
                     Text(
                         text = "Tip",
@@ -219,7 +215,6 @@ fun BillForm(
                     Text(text = "$tipPercetage %")
                     Spacer(modifier = Modifier.height(14.dp))
 
-                    //Slider
                     Slider(value = sliderPositionState.value,
                         onValueChange = { newVal ->
                             sliderPositionState.value = newVal
@@ -245,8 +240,6 @@ fun BillForm(
     }
 }
 
-
-//@Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     JetTipAppTheme {
