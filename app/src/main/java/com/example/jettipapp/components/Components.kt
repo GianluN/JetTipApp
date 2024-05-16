@@ -29,11 +29,11 @@ fun InputField(
     enabled: Boolean,
     isSingleLine: Boolean,
     keyboardType: KeyboardType = KeyboardType.Number,
-    imeAction: ImeAction = ImeAction.Next, // avanza al campo di input successivo quando finisco di scrivere
+    imeAction: ImeAction = ImeAction.Next,
     onAction: KeyboardActions = KeyboardActions.Default
 ) {
     OutlinedTextField(value = valueState.value,
-        onValueChange = { valueState.value = it}, //quando il testo cambia
+        onValueChange = { valueState.value = it},
         label = { Text(text = labelId)},
         leadingIcon = { Icon(imageVector = Icons.Rounded.AttachMoney,
             contentDescription = "Money Icon")},
